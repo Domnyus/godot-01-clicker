@@ -1,0 +1,199 @@
+[gd_scene load_steps=2 format=3 uid="uid://n006hxta1dui"]
+
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_axfuu"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_axfuu")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ClickArea" type="Node" parent="CanvasLayer"]
+
+[node name="label_counter" type="Label" parent="CanvasLayer/ClickArea"]
+offset_right = 114.0
+offset_bottom = 273.0
+theme_override_font_sizes/font_size = 200
+text = "0"
+
+[node name="Button" type="Button" parent="CanvasLayer/ClickArea"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -145.0
+offset_right = 234.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 100
+keep_pressed_outside = true
+text = "Click"
+
+[node name="ShopArea" type="Node" parent="CanvasLayer"]
+
+[node name="Panel" type="Panel" parent="CanvasLayer/ShopArea"]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -832.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="label_shop" type="Label" parent="CanvasLayer/ShopArea/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -60.5
+offset_right = 60.5
+offset_bottom = 69.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 50
+text = "Shop"
+
+[node name="Timer" type="Node" parent="CanvasLayer/ShopArea/Panel"]
+
+[node name="Timer" type="Button" parent="CanvasLayer/ShopArea/Panel/Timer"]
+offset_left = 675.0
+offset_top = 500.0
+offset_right = 799.0
+offset_bottom = 568.0
+text = "40000"
+
+[node name="label_timer" type="Label" parent="CanvasLayer/ShopArea/Panel/Timer"]
+offset_left = 675.0
+offset_top = 475.0
+offset_right = 793.0
+offset_bottom = 498.0
+text = "Decrease timer"
+
+[node name="Autos" type="Node" parent="CanvasLayer/ShopArea/Panel"]
+
+[node name="Auto" type="Button" parent="CanvasLayer/ShopArea/Panel/Autos"]
+offset_left = 366.0
+offset_top = 500.0
+offset_right = 490.0
+offset_bottom = 568.0
+text = "40000"
+
+[node name="label_auto" type="Label" parent="CanvasLayer/ShopArea/Panel/Autos"]
+offset_left = 366.0
+offset_top = 475.0
+offset_right = 484.0
+offset_bottom = 498.0
+text = "Double Autos"
+
+[node name="Creation" type="Node" parent="CanvasLayer/ShopArea/Panel"]
+
+[node name="Creation" type="Button" parent="CanvasLayer/ShopArea/Panel/Creation"]
+offset_left = 993.0
+offset_top = 300.0
+offset_right = 1117.0
+offset_bottom = 368.0
+text = "100000"
+
+[node name="label_creation" type="Label" parent="CanvasLayer/ShopArea/Panel/Creation"]
+offset_left = 993.0
+offset_top = 275.0
+offset_right = 1111.0
+offset_bottom = 298.0
+text = "Creation"
+
+[node name="Magic" type="Node" parent="CanvasLayer/ShopArea/Panel"]
+
+[node name="Magic" type="Button" parent="CanvasLayer/ShopArea/Panel/Magic"]
+offset_left = 675.0
+offset_top = 300.0
+offset_right = 799.0
+offset_bottom = 368.0
+text = "50000"
+
+[node name="label_magic" type="Label" parent="CanvasLayer/ShopArea/Panel/Magic"]
+offset_left = 675.0
+offset_top = 275.0
+offset_right = 793.0
+offset_bottom = 298.0
+text = "Magic"
+
+[node name="Generator" type="Node" parent="CanvasLayer/ShopArea/Panel"]
+
+[node name="Generator" type="Button" parent="CanvasLayer/ShopArea/Panel/Generator"]
+offset_left = 366.0
+offset_top = 300.0
+offset_right = 490.0
+offset_bottom = 368.0
+text = "15000"
+
+[node name="label_generator" type="Label" parent="CanvasLayer/ShopArea/Panel/Generator"]
+offset_left = 366.0
+offset_top = 275.0
+offset_right = 484.0
+offset_bottom = 298.0
+text = "Generator
+"
+
+[node name="Mining" type="Node" parent="CanvasLayer/ShopArea/Panel"]
+
+[node name="Mining" type="Button" parent="CanvasLayer/ShopArea/Panel/Mining"]
+offset_left = 993.0
+offset_top = 100.0
+offset_right = 1117.0
+offset_bottom = 168.0
+text = "2000"
+
+[node name="label_mining" type="Label" parent="CanvasLayer/ShopArea/Panel/Mining"]
+offset_left = 994.0
+offset_top = 75.0
+offset_right = 1112.0
+offset_bottom = 98.0
+text = "Mining"
+
+[node name="Gathering" type="Node" parent="CanvasLayer/ShopArea/Panel"]
+
+[node name="Gathering" type="Button" parent="CanvasLayer/ShopArea/Panel/Gathering"]
+offset_left = 675.0
+offset_top = 100.0
+offset_right = 799.0
+offset_bottom = 168.0
+text = "100"
+
+[node name="label_gathering" type="Label" parent="CanvasLayer/ShopArea/Panel/Gathering"]
+offset_left = 675.0
+offset_top = 75.0
+offset_right = 793.0
+offset_bottom = 98.0
+text = "Gathering"
+
+[node name="Click" type="Node" parent="CanvasLayer/ShopArea/Panel"]
+
+[node name="ClickAmmount" type="Button" parent="CanvasLayer/ShopArea/Panel/Click"]
+offset_left = 366.0
+offset_top = 100.0
+offset_right = 490.0
+offset_bottom = 168.0
+text = "5"
+
+[node name="label_click_ammount" type="Label" parent="CanvasLayer/ShopArea/Panel/Click"]
+offset_left = 371.0
+offset_top = 75.0
+offset_right = 489.0
+offset_bottom = 98.0
+text = "Click Ammount"
+
+[node name="HSeparator" type="HSeparator" parent="CanvasLayer/ShopArea"]
+offset_left = 320.0
+offset_top = 401.0
+offset_right = 1152.0
+offset_bottom = 405.0
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="pressed" from="CanvasLayer/ClickArea/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/ShopArea/Panel/Timer/Timer" to="." method="_on_generator_pressed"]
+[connection signal="pressed" from="CanvasLayer/ShopArea/Panel/Autos/Auto" to="." method="_on_generator_pressed"]
+[connection signal="pressed" from="CanvasLayer/ShopArea/Panel/Creation/Creation" to="." method="_on_creation_pressed"]
+[connection signal="pressed" from="CanvasLayer/ShopArea/Panel/Magic/Magic" to="." method="_on_magic_pressed"]
+[connection signal="pressed" from="CanvasLayer/ShopArea/Panel/Generator/Generator" to="." method="_on_generator_pressed"]
+[connection signal="pressed" from="CanvasLayer/ShopArea/Panel/Mining/Mining" to="." method="_on_mining_pressed"]
+[connection signal="pressed" from="CanvasLayer/ShopArea/Panel/Gathering/Gathering" to="." method="_on_gathering_pressed"]
+[connection signal="pressed" from="CanvasLayer/ShopArea/Panel/Click/ClickAmmount" to="." method="_on_click_ammount_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
